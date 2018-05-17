@@ -42,7 +42,16 @@ public class Regex {
 	  		System.out.println("Multiply ="+floati);
 	  		System.out.println("Divide "+divide );
 	  		System.out.println("remaider(%) "+remid);
-	  		
+			
+			
+	  		//My name is waqas and I am editing this code. 
+			System.out.println("Plus (+) ="+ inti);
+	  		System.out.println("Minus ="+stringi);
+	  		System.out.println("Multiply ="+floati);
+	  		System.out.println("Divide "+divide );
+	  		System.out.println("remaider(%) "+remid);
+			
+			
 	  	}	
 	     }
 		
