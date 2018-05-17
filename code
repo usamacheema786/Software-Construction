@@ -1,0 +1,50 @@
+import java.util.*;
+import java.util.regex.*;
+
+public class Regex {
+	public static void main(String []args){
+		Scanner in=new Scanner(System.in);
+		String some =in.nextLine();
+		//String pet ="(int|float|double|string|char|short|long)";
+		String pet="\\+|\\-|\\*|\\/|\\%";
+		Pattern r=Pattern.compile(pet);
+		 Matcher m = null;
+		//System.out.println(m.find());
+		/*StringTokenizer st = new StringTokenizer(some,";");
+	     while (st.hasMoreTokens()) {
+	         System.out.println(st.nextToken());*/
+		 
+	          m=r.matcher(some);
+	          int c=0;
+	  		int inti=0;
+	  		int stringi=0;
+	  		int floati=0;
+	  		int divide =0;
+	  		int remid=0;
+	  		String a;
+	          while(m.find()){
+	  			
+	  		
+	        	  a =m.group(0);
+	  			if(a.equals("+"))
+	  			  inti++;
+	  			if(a.equals("-"))
+		  			  stringi++;
+	  			if(a.equals("*"))
+		  			  floati++;
+	  			if(a.equals("/"))
+	  				divide++;
+	  			if(a.equals("%"))
+	  				remid++;
+	  		}
+	  		System.out.println("Plus (+) ="+ inti);
+	  		System.out.println("Minus ="+stringi);
+	  		System.out.println("Multiply ="+floati);
+	  		System.out.println("Divide "+divide );
+	  		System.out.println("remaider(%) "+remid);
+	  		
+	  	}	
+	     }
+		
+
+	
