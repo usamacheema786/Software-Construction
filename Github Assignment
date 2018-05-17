@@ -11,31 +11,23 @@ public class Regex {
 		 Matcher m = null;
 		//System.out.println(m.find());
 		/*StringTokenizer st = new StringTokenizer(some,";");
-	     while (st.hasMoreTokens()) {
-	         System.out.println(st.nextToken());*/
-		 
-	          m=r.matcher(some);
-	          int c=0;
-	  		int inti=0;
-	  		int stringi=0;
-	  		int floati=0;
-	  		int divide =0;
-	  		int remid=0;
-	  		String a;
-	          while(m.find()){
-	  			
-	  		
-	        	  a =m.group(0);
-	  			if(a.equals("+"))
-	  			  inti++;
-	  			if(a.equals("-"))
-		  			  stringi++;
-	  			if(a.equals("*"))
-		  			  floati++;
-	  			if(a.equals("/"))
-	  				divide++;
-	  			if(a.equals("%"))
-	  				remid++;
+	     	while (st.hasMoreTokens()) {
+	        	System.out.println(st.nextToken());*/
+	        m=r.matcher(some);
+	        int c=0,inti=0,stringi=0,floati=0,divide=0,remid=0;
+	  	String a;
+		while(m.find()){
+			a =m.group(0);
+	  		if(a.equals("+"))
+	  			inti++;
+	  		if(a.equals("-"))
+		  		stringi++;
+	  		if(a.equals("*"))
+		  		floati++;
+	  		if(a.equals("/"))
+	  			divide++;
+	  		if(a.equals("%"))
+	  			remid++;
 	  		}
 	  		System.out.println("Plus (+) ="+ inti);
 	  		System.out.println("Minus ="+stringi);
